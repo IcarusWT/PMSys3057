@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="PMSys3057-quartz" />
+        <module name="PMSys3057-system" />
+        <module name="PMSys3057-framework" />
+        <module name="PMSys3057-common" />
+        <module name="PMSys3057-generator" />
+        <module name="PMSys3057-admin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gpm-admin" target="1.8" />
+      <module name="gpm-common" target="1.8" />
+      <module name="gpm-framework" target="1.8" />
+      <module name="gpm-generator" target="1.8" />
+      <module name="gpm-quartz" target="1.8" />
+      <module name="gpm-system" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

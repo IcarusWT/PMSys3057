@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.PMSys3057.system.mapper.SysRevenueMapper">
+    <resultMap type="SysRevenue" id="SysRevenueResult">
+        <id     property="Year"     column="Year"/>
+        <result property="Jan"      column="Jan"/>
+        <result property="Feb"      column="Feb"/>
+        <result property="Mar"      column="Mar"/>
+        <result property="Apr"      column="Apr"/>
+        <result property="May"      column="May"/>
+        <result property="June"     column="June"/>
+        <result property="July"     column="July"/>
+        <result property="Aug"      column="Aug"/>
+        <result property="Sept"     column="Sept"/>
+        <result property="Oct"      column="Oct"/>
+        <result property="Nov"      column="Nov"/>
+        <result property="Dec"      column="Dec"/>
+    </resultMap>
+
+    <select id="selectMonthRevenueByYearAndMonth" parameterType="SysRevenue" resultMap="SysRevenueResult">
+        <include refid="selectRevenueVo"/>
+        SELECT Month = #{MONTH }
+        from sys_revenue
+        where Year = #{YEAR }
+    </select>
+</mapper>
